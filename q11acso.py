@@ -1,0 +1,5 @@
+days = float((input('How many days without work accidents: ')))
+years = int(((days)/365))
+months= int(((days)%365)/30)
+days = float(((days)%365)%30)
+print(f"As of today, there is {years} years, {months} months, {days: .0f} days without any work accidents")
