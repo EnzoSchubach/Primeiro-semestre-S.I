@@ -8,7 +8,7 @@ int main(){
     float aux;
     printf ("Insira o tamanho da matriz\nO valor tem que ser inteiro, impar, positivo e diferente de zero\n");
     scanf ("%f", &aux);
-    //Lógica pra verificar se sai do padrão
+//Lógica pra verificar se sai do padrão
     while (valido == 0){
         n = (int)aux;
         if (n%2 == 0 || n < 1 || n != aux){
@@ -19,7 +19,7 @@ int main(){
             valido = 1;
         }
     }
-    //cria a matriz m x n
+//cria a matriz n x n
     int matriz[n][n];
     aux = 0;
     for (int i = 0; i < n; i++){
@@ -28,10 +28,19 @@ int main(){
             matriz[i][j] = aux;
         }
     }
+//inverte a matriz
+    for (int i = 0; i < n; i++){
+        for (int j = i + 1; j < n; j++){
+            aux = matriz[i][j];
+            matriz[i][j] = matriz[j][i];
+            matriz[j][i] = aux;
+        }
+    }
 
-//printar a matriz invertida
-    for (int j = 0; j < n; j++){
-        for (int i = 0; i < n; i++){
+
+//printar a matriz
+    for (int i = 0; i < n; i++){
+        for (int j = 0; j < n; j++){
             printf ("%d ", matriz[i][j]);
         }
         printf ("\n");

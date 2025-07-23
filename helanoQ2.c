@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+/*Para um valor ímpar n, monte a matriz n x n preenchida com números de 1 a n*n 
+em formato serpente: alternando a direção do preenchimento em cada linha. 
+Primeiro da esquerda para a direita. Depois da direita para esquerda*/
 int main(){
     int n, valido = 0;
     float aux;
@@ -13,14 +16,13 @@ int main(){
             scanf ("%f", &aux);
         }
         else{
-            valido = 1;
+            break;
         }
     }
     //cria a matriz n x n em formato de serpente
-    valido = 0;
     int serpente[n][n];
     for (int i = 0; i < n; i++){
-        //se for impar, a linha é criada de forma decrescente, se for impar, o contrário
+        //se for impar, a linha é criada de forma decrescente, se for par, o contrário
         if (i%2 == 0){
             for (int a = 0; a < n; a++){
                 valido++;
