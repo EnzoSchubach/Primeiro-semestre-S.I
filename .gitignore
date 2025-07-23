@@ -14,3 +14,13 @@ pip-selfcheck.json
 
 # VSCode
 .vscode/
+
+#extra
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+.env
