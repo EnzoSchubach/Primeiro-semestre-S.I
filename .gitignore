@@ -1,11 +1,16 @@
-.Python
-.venv
-[Bb]in
-[Ii]nclude
-[Ll]ib
-[Ll]ib64
-[Ll]ocal
-[Ss]cripts
+# Pastas de ambiente Python
+.Python/
+.venv/
+[Bb]in/
+[Ii]nclude/
+[Ll]ib/
+[Ll]ib64/
+[Ll]ocal/
+[Ss]cripts/
+
+# Arquivos de configuração
 pyvenv.cfg
 pip-selfcheck.json
-**/.vscode/
+
+# VSCode
+.vscode/
